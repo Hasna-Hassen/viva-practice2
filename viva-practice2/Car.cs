@@ -14,10 +14,9 @@ namespace viva_practice2
 
         public int NumberOfDoors { get => numberOfDoors; set => numberOfDoors = value; }
 
-        public override void ToString()
+        public override string ToString()
         {
-            base.ToString();
-            Console.WriteLine($"Number of Doors: {numberOfDoors}");
+            return $"{base.ToString()}, Number of Doors: {numberOfDoors}";
         }
     }
 }

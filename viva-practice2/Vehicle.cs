@@ -23,9 +23,9 @@ namespace viva_practice2
         public string VehicleBrand { get => vehicleBrand; set => vehicleBrand = value; }
         public double RentalPricePerDay { get => rentalPricePerDay; set => rentalPricePerDay = value; }
 
-        public virtual void ToString()
+        public virtual string ToString()
         {
-            Console.WriteLine($"Vehicle ID: {vehicleID}, Brand: {vehicleBrand}, Rental Price per Day: {rentalPricePerDay}");
+             return $"Vehicle ID: {vehicleID}, Brand: {vehicleBrand}, Rental Price per Day: {rentalPricePerDay}";
         }
     }
 }

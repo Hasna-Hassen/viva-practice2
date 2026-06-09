@@ -14,10 +14,9 @@ namespace viva_practice2
 
         public int EngineCC { get => engineCC; set => engineCC = value; }
 
-        public override void ToString()
+        public override string ToString()
         {
-            base.ToString();
-            Console.WriteLine($"Engine CC: {engineCC}");
+            return $"{base.ToString()}, Engine CC: {engineCC}";
         }
     }
 }
